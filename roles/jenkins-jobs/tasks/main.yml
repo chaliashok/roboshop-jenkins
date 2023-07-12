@@ -1,7 +1,7 @@
 - name: Setup Template
   ansible.builtin.template:
     src: pipeline.yml
-    dst: /tmp/pipeline.yml
+    dest: /tmp/pipeline.yml
 
 - name: Create a jenkins job using basic authentication
   community.general.jenkins_job:
